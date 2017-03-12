@@ -4,7 +4,8 @@ import FlatButton from 'material-ui/FlatButton';
 class YesButton extends Component {
     styles = {
         buttonSize: {
-            height: "16vh"
+            height: "16vh",
+            lineHeight: "16vh"
         },
         buttonColor: {
             backgroundColor: "green"

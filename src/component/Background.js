@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Title from './Title';
+import Questionair from './Questionair';
 import YesButton from './YesButton';
 
 class Background extends Component {
@@ -15,13 +16,14 @@ class Background extends Component {
         },
         baeminFontFamily: {
             fontFamily: "BMDOHYEON"
-        },
+        }
     }
 
     render() {
         return (
             <div style={Object.assign({}, this.styles.backgroundBox, this.styles.paddings, this.styles.baeminFontFamily)}>
                 <Title/>
+                <Questionair/>
                 <YesButton/>
             </div>
         )

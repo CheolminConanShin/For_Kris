@@ -2,6 +2,7 @@
   "name": "for_kris",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cheolminconanshin.github.io/For_Kris",
   "dependencies": {
     "material-ui": "^0.17.0",
     "react": "^15.4.2",
@@ -9,10 +10,13 @@
     "react-tap-event-plugin": "^2.0.1"
   },
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "react-scripts": "0.9.3"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

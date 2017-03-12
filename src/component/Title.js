@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
 
 class Title extends Component {
-            styles = {
+    styles = {
         textBox: {
             width: "100%",
-            textAlign: "center"
-        },
-        baeminFontFamily: {
-            fontFamily: "BMDOHYEON"
+            marginBottom: "3vh"
         },
         titleFontSize: {
             fontSize: "5vw"
@@ -17,7 +14,7 @@ class Title extends Component {
     render() {
         return (
             <div style={this.styles.textBox}>
-                <div style={Object.assign({}, this.styles.baeminFontFamily, this.styles.titleFontSize)}>For Kris</div>
+                <div style={Object.assign({}, this.styles.titleFontSize)}>For Kris</div>
             </div>
         );
     }
